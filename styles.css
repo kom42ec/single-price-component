@@ -61,13 +61,13 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 section {
-  padding: 25px 20px;
+  padding: 30px 20px;
 }
 
 ul {
@@ -84,8 +84,11 @@ ul {
   grid-template-columns: 1fr;
 }
 
+/* Section #1 */
 .community {
   background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 h1 {
@@ -107,19 +110,62 @@ h1 {
   line-height: 1.8;
 }
 
+/* Section #2 */
 .subscription {
   background-color: var(--cyan-color);
   color: #fff;
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.dollars {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.less {
+  font-size: 16px;
+  color: var(--light-gray);
+}
+.month {
+  color: var(--light-gray);
+}
+button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--bright-yellow);
+  border: none;
+  color: #fff;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 16px;
+  /* font-weight: 700; */
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+}
+
+/* Section #3 */
 .about {
   background-color: #54c1bf;
   color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 h2 {
   font-size: 18px;
+  margin-bottom: 20px;
 }
+
+/****************************************************/
+/* Desktop version */
+/****************************************************/
 
 @media screen and (min-width: 960px) {
   .grid {
@@ -128,5 +174,9 @@ h2 {
 
   .community {
     grid-column: 1 / -1;
+  }
+
+  section {
+    padding: 40px;
   }
 }
