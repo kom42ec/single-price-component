@@ -53,4 +53,18 @@ body {
   line-height: 1;
   font-weight: 400;
   font-size: 16px;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.community {
+}
+
+.subscription {
+}
+
+.about {
 }
