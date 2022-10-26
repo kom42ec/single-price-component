@@ -52,7 +52,7 @@ body {
   font-family: "Karla", sans-serif;
   line-height: 1;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   background-color: var(--light-gray);
   display: flex;
   align-items: center;
@@ -60,11 +60,73 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+section {
+  padding: 25px 20px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .community {
+  background-color: #fff;
+}
+
+h1 {
+  color: var(--cyan-color);
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+.hussle {
+  color: var(--bright-yellow);
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.access {
+  color: var(--grayish-blue);
+  line-height: 1.8;
 }
 
 .subscription {
+  background-color: var(--cyan-color);
+  color: #fff;
 }
 
 .about {
+  background-color: #54c1bf;
+  color: #fff;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .community {
+    grid-column: 1 / -1;
+  }
 }
